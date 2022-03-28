@@ -1,7 +1,7 @@
-FROM php:fpm
+# Microsoft\Graph PHP use version 8.0 (PHP 8.1: Serializable deprecated)
+FROM php:8.0-fpm
 RUN docker-php-ext-install pdo pdo_mysql 
 RUN apt update && apt install -y zlib1g-dev g++ libicu-dev zip libzip-dev zip libpq-dev \
-    && docker-php-ext-install pdo pdo_mysql \
     && docker-php-ext-configure zip \
     && docker-php-ext-install zip
 

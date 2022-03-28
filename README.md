@@ -68,3 +68,13 @@ Create new user, set privileges
 Use MySQL Workbench connection details
 
 `SHOW GRANTS FOR 'user'@'localhost';`
+
+### PHP version.
+A bug will appear if PHP version is later then 8.1.0
+`Return type of Microsoft\Graph\Model\Entity::jsonSerialize() should either be compatible with JsonSerializable::jsonSerialize(): mixed`
+
+Set PHP version 8 in Dockerfil:
+
+*Microsoft\Graph PHP use version 8.0 (PHP 8.1: Serializable deprecated)*
+
+`FROM php:8.0-fpm`

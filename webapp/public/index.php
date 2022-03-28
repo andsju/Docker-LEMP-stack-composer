@@ -35,6 +35,13 @@
 
             require __DIR__ . '/views/authenticate.php';
             break;
+
+        case '/authenticated':
+
+            header("Location: /views/authenticate.php?" . $_SERVER['QUERY_STRING']);
+            exit();
+            break;
+        
         
         case '/signin':
     

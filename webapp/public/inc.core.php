@@ -1,5 +1,8 @@
 <?php
 
+// use sessions 
+session_start();
+
 // live or development
 define("LIVE", true);
 
