@@ -10,7 +10,7 @@ temp/
 
 # composer
 composer.phar
-vendor/
+webapp/vendor/
 
 # app credentials
 webapp/src/configs/inc.credentials.php

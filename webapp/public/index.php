@@ -30,6 +30,19 @@
             require __DIR__ . '/views/sample.php';
             break;
 
+
+        case '/authenticate':
+
+            require __DIR__ . '/views/authenticate.php';
+            break;
+        
+        case '/signin':
+    
+            header("Location: /signin.php");
+            exit();
+            break;    
+    
+
         case '/phpinfo':
     
             header('Location: /phpinfo.php'); 
