@@ -1,5 +1,5 @@
 <?php
-include SRC . '/configs/inc.db.php';
+include SRC . '/configs/inc.credentials.php';
 
 class Database {
 
