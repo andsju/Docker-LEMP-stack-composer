@@ -1,7 +1,6 @@
 version: '3.8'
 services:
     nginx-server:
-        container_name: nginx-server
         image: nginx:latest
         ports:
             - "80:80"
@@ -11,14 +10,12 @@ services:
         depends_on:
             - php
     php:
-        container_name: php
         build:
             context: .
             dockerfile: Dockerfile
         volumes:
             - ./webapp:/var/www/website
     mysql-server:
-        container_name: mysql-server
         image: mariadb:latest
         environment:
             MYSQL_ROOT_PASSWORD: 'secret'

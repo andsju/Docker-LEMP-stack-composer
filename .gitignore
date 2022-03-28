@@ -1,0 +1,13 @@
+# .log files
+*.log
+
+# editor 
+.history/
+.vscode/*
+
+# files in temp folder
+temp/
+
+# composer
+composer.phar
+vendor/

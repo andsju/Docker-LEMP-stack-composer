@@ -25,11 +25,15 @@
                 require __DIR__ . '/views/home.php';
                 break;
 
-
         case '/sample':
         
             require __DIR__ . '/views/sample.php';
-            break;            
+            break;
+
+        case '/phpinfo':
+    
+            header('Location: /phpinfo.php'); 
+            break;
 
         default:
             

@@ -21,7 +21,5 @@ $title = "Home";
     
     <script src="js/code.js"></script>
 
-    <?php phpinfo(); ?>
-
 </body>
 </html>
